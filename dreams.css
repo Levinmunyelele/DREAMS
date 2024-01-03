@@ -1,0 +1,265 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #2b0487;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: inherit;
+}
+
+
+.logo{
+    max-width:150px;
+    height: auto;
+    color: #fff;
+    /* padding-top: 25px; */
+}
+.logoimg{
+    display: inline;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    margin-right: 15px;
+    
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color:#000000;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0); /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .nav-full{
+        visibility: hidden;
+    }
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #2b0487;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Styles for Components */
+#components ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#components li {
+    margin-bottom: 10px;
+}
+
+#quotes {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: #2b0487;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  border-left: 5px solid #2b0487;
+  margin: 20px 0;
+  padding-left: 15px;
+  font-style: italic;
+  max-width: 600px;
+  text-align: center;
+}
+
+.author {
+  font-weight: bold;
+}
+
+
+/* Styles for Additional Information */
+#additional-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+
+
+/* Responsive Styling */
+@media only screen and (max-width: 600px) {
+    .nav-full{
+        visibility: hidden;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .overlay-menu {
+        left: 0;
+    }
+    
+    .menu-toggle.show div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.show div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.show div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+.nav-full a{
+
+
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #2b0487;
+    color: white;
+  }
+  
+  .fa {font-size:50px;}
+
+  .iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #2b0487;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+
+  
+
+  
+  

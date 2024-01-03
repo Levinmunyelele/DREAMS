@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dreams.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>DREAMS PAGE</title>
+
+    <style>
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 320px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            filter: blur(4px);
+            background: #d1ebff;
+            border-radius: 10px;
+
+        }
+        .swiper-slide-active{
+            filter: blur(0px);
+
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+        .testimonialBox{
+            position: relative;
+            width: 100%;
+            padding: 40px;
+            padding-top: 90px;
+            color: #999;
+        }
+        .testimonialBox .quote{
+            display: flex;
+            align-items: center; 
+            margin-right: 10px;
+            opacity: 0.2;
+        }
+        .testimonialBox .details{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .testimonialBox .details .imgBx{
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+        .testimonialBox .details .imgBx img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+        .testimonialBox .details h3{
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #2b0487;
+            line-height: 1.1em;
+        }
+        .testimonialBox .details h3 span{
+            font-size: 12px;
+            color: #666;
+        }
+        .swiper-container-3d .swiper-slide-shadow-left,
+        .swiper-container-3d .swiper-slide-shadow-right{
+            background-image: none;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class='logoimg'>
+            <img src="images/logo.jpg" alt="DREAMS Logo" class='logo'>
+            <!-- <h1>DREAMS Initiative</h1> -->
+
+        </div>
+        <nav>
+            <div class="nav-full">
+                <a href="#about">About</a>
+                <a href="#goals">Goals</a>
+                <a href="#impact">Impact</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#quotes">Quotes</a>
+            </div>
+        </nav>
+
+        <div id="myNav" class="overlay">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="overlay-content">
+                <a href="#about" onclick="closeNav()">About</a>
+                <a href="#goals" onclick="closeNav()">Goals</a>
+                <a href="#impact" onclick="closeNav()">Impact</a>
+                <a href="#achievements" onclick="closeNav()">Achievements</a>
+                <a href="#testimonials" onclick="closeNav()">Testimonials</a>
+                <a href="#quotes" onclick="closeNav()">Quotes</a>
+            </div>
+
+        </div>
+
+        <div class="menu-toggle" id="myNav" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+
+    </header>
+
+    <section id="about">
+        <h2>About DREAMS</h2>
+        <img src="images/friendship-day-3104635_1920.jpg" alt="DREAMS Image"
+            style="width: 100%; height: auto; margin-bottom: 20px;">
+        <p>DREAMS, a new initiative of PEPFAR, the Gates Foundation, and the Nike Foundation, is helping adolescent
+            girls and young women lead Determined, Resilient, Empowered, AIDS-free, Mentored, and Safe lives. Global
+            Communities, in partnership with USAID, implements the DREAMS initiative in the Pumwani Ward of Nairobi
+            County in Kenya, which is one of several countries where DREAMS is being implemented.</p>
+
+    </section>
+
+    <section id="about">
+        <h2>How Does the DREAMS Initiative Work?</h2>
+        <img src="images/alex-nemo-hanse-_KP6Ve-rnNw-unsplash.jpg" alt="Goals Image"
+            style="width: 100%; height: auto; margin-bottom: 20px;">
+
+        <p>DREAMS is based on the recognition that girls can – and often do –reach their full potential when they have
+            access to multiple interventions, and when they are perceived as capable by themselves and by their
+            relatives, classmates, teachers and other members of their communities.
+            Over the next two years, Global Communities and its partners will work with 2,500 adolescent girls and young
+            women between 10 and 24 years of age from the Pumwani Ward and the greater community to ensure these girls
+            achieve their DREAMS. The project will emphasize healthy sexual behaviors including abstinence and delayed
+            sexual debut; gender norms; prevention of GBV; life skills; prevention of drug and alcohol abuse; adherence
+            to Anti-Retroviral Therapy (ART) as applicable; positive attitudes towards people living with HIV;
+            stigma reduction and livelihoods and positive health-seeking behaviors.
+    </section>
+
+    <section id="goals">
+        <h2>Goals of DREAMS</h2>
+        <img src="images/arrows-2889040_1920.jpg" alt="Goals Image"
+            style="width: 100%; height: auto; margin-bottom: 20px;">
+        <p>The primary goals include promoting education, reducing economic inequality, improving healthcare resources,
+            and fostering a supportive environment for young women.</p>
+    </section>
+
+    <section id="impact">
+        <h2>Impact of DREAMS</h2>
+        <img src="images/hands-1345059_1920.jpg" alt="Impact Image"
+            style="width: 100%; height: auto; margin-bottom: 20px;">
+        <p>DREAMS seeks to create a positive impact on the lives of young women in sub-Saharan Africa, with the ultimate
+            goal of contributing to the control and eventual elimination of the HIV/AIDS epidemic.</p>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <p>USAID contributed to supporting 2,414,719 adolescent girls and young women through the DREAMS program (86% of
+            2,818,337 reached by all of PEPFAR), an increase from 1.6 million adolescent girls and young women ages
+            10-24 years in DREAMS at the beginning of the fiscal year.</p>
+
+        <p>In DREAMS districts where USAID is implementing, over 250,000 AGYW received educational support which could
+            include school and exam fees, uniforms and materials, tutoring, and/or basic literacy. While educational
+            support is for primary and secondary school, an emphasis is placed on keeping AGYW in school especially as
+            the transition from primary to secondary levels and supporting AGYW to return to school.</p>
+
+        <p>USAID managed 65 percent of the DREAMS budget across 16 countries and between 97 and 100 percent of the
+            DREAMS program budget in Namibia, Rwanda, and South Sudan.</p>
+
+        <p>USAID provided education on and access to voluntary PrEP, as part of a package of services, to 209,551 AGYW
+            ages 15-24; in addition to the primary package of services, PrEP is one of the secondary services that could
+            be offered to a young woman based on her additional prevention needs.</p>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <p><i class="fa fa-user"></i></p>
+                    <h3>11+</h3>
+                    <p>Partners</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p><i class="fa fa-check"></i></p>
+                    <h3>55+</h3>
+                    <p>Projects</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p><i class="fa fa-smile-o"></i></p>
+                    <h3>1M+</h3>
+                    <p>Reached Girls</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p><i class="fa fa-coffee"></i></p>
+                    <h3>100+</h3>
+                    <p>Meetings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="images/quotes.png" class="quote" style="width: 50px; height: 50px;" alt="Quote Icon">
+                        <div class="content">
+                            <p>Before DREAMS, I felt trapped in my village with no options. Now, I'm studying computer science thanks to their scholarship program, and I dream of building apps that empower girls like me.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="images/jeffery-erhunse-9t691X-ZcA0-unsplash.jpg">
+                                </div>
+                                <h3>Amina,<br><span> 18, Kisumu County</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="images/quotes.png" class="quote" style="width: 50px; height: 50px;" alt="Quote Icon">
+                        <div class="content">
+                            <p>Being a DREAMS ambassador changed my life. I organize campaigns against child marriage and female genital mutilation, and I see more girls standing up for their rights in my community.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="images/jessica-felicio-_cvwXhGqG-o-unsplash.jpg">
+                                </div>
+                                <h3>- Halima<br><span>17, Kwale County</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="images/quotes.png" class="quote" style="width: 50px; height: 50px;" alt="Quote Icon">
+                        <div class="content">
+                            <p>DREAMS trained me in sustainable farming techniques, and now I harvest enough food to feed my family and sell the surplus at the market. My income gives me a voice and control over my future.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="images/vladimir-yelizarov-9Glr_f1eBVk-unsplash.jpg">
+                                </div>
+                                <h3>Aisha, <br><span>22, Machakos County</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="images/quotes.png" class="quote" style="width: 50px; height: 50px;" alt="Quote Icon">
+                        <div class="content">
+                            <p>With the microloan I received from DREAMS, I started a poultry business. My chickens are bringing me a steady income, and I'm saving to open a small restaurant, creating jobs for other women in my village</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="images/oladimeji-odunsi-Yi4Zs64l0tE-unsplash.jpg">
+                                </div>
+                                <h3>Zahra,<br><span> 21, Kilifi County</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="images/quotes.png" class="quote" style="width: 50px; height: 50px;" alt="Quote Icon">
+                        <div class="content">
+                            <p>DREAMS helped us form a youth council where we address issues like gender-based violence and access to education. We're working with leaders to create positive change in our district.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="images/prince-akachi-l3IHXOdMyHQ-unsplash.jpg">
+                                </div>
+                                <h3>Oduor,<br><span>20, Nairobi County</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="images/quotes.png" class="quote" style="width: 50px; height: 50px;" alt="Quote Icon">
+                        <div class="content">
+                            <p>DREAMS taught me about sexual health and gave me the courage to talk to my parents about consent. Now, I educate other girls in my community, breaking the silence around taboo topics.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="images/vladimir-yelizarov-vKQIhty4YsQ-unsplash.jpg">
+                                </div>
+                                <h3>Nafula, <br><span>16, Kakamega County</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="images/quotes.png" class="quote" style="width: 50px; height: 50px;" alt="Quote Icon">
+                        <div class="content">
+                            <p>I used to be bullied for being HIV positive, but DREAMS connected me with a support group where I found acceptance and learned to manage my health. Now, I advocate for ending stigma and discrimination.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="images/smart-araromi-FKknWBrPzb0-unsplash.jpg">
+                                </div>
+                                <h3>Kendi,<br><span> 19, Mombasa County</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+    </section>
+    <section id="quotes">
+        <h2 class="section-title">Inspirational Quotes</h2>
+        <div class="quote-container">
+            <blockquote class="quote">
+                <p>"Empowering women is key to building a healthy and prosperous society." - <span class="author">Melinda Gates</span></p>
+            </blockquote>
+            <blockquote class="quote">
+                <p>"The strength of a woman is not measured by the impact that all her hardships in life have had on her,
+                    but the strength of a woman is measured by the extent of her refusal to allow those hardships to dictate
+                    her and who she becomes." - <span class="author">C. JoyBell C.</span></p>
+            </blockquote>
+        </div>
+    </section>
+    
+    <div class="iconbutton">
+        <a href="#about">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+                width="63px">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2023 DREAMS Initiative</p>
+    </footer>
+
+    <script src="dreams.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
